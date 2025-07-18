@@ -1,0 +1,2409 @@
+[
+  {
+    "id": 1510,
+    "request": "Show a coordinate system with a dot",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1592,
+    "request": "Show text that says 'Manim Animation'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Manim Animation\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 282
+  },
+  {
+    "id": 1523,
+    "request": "Create a mathematical formula F = ma",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        line_obj = MathTex(\"x^2 + y^2 = r^2\")\n        line_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(line_obj))\n        self.wait(2)",
+    "length": 304
+  },
+  {
+    "id": 1423,
+    "request": "Create a text that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 315,
+    "request": "Show a arrow that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Rotate(arrow_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 308
+  },
+  {
+    "id": 1792,
+    "request": "Make a arrow move from LEFT to LEFT",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(arrow_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 309
+  },
+  {
+    "id": 2,
+    "request": "Create a math formula animation",
+    "script": "from manim import *\n\nclass MathFormula(Scene):\n    def construct(self):\n        # Create mathematical formula\n        formula = MathTex(\"E = mc^2\")\n        formula.set_color(GREEN)\n        \n        # Display formula\n        self.play(Write(formula))\n        self.wait(2)",
+    "length": 270,
+    "source": "example"
+  },
+  {
+    "id": 1323,
+    "request": "Make a circle transform into a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create first circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Create second rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(GRAY)\n        \n        # Show first shape\n        self.play(Create(circle_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(circle_obj, rectangle_obj))\n        self.wait(1)",
+    "length": 552
+  },
+  {
+    "id": 1294,
+    "request": "Make a mathtext transform into a arrow",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1059,
+    "request": "Create multiple rectangles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1153,
+    "request": "Make a arrow move from UR to DL",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(arrow_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 309
+  },
+  {
+    "id": 1084,
+    "request": "Make a dot transform into a mathtext",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 742,
+    "request": "Show text that says 'Hello World'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1935,
+    "request": "Make a rectangle move from UP to UR",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(rectangle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 333
+  },
+  {
+    "id": 1756,
+    "request": "Create a rectangle that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 977,
+    "request": "Show a coordinate system with a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 71,
+    "request": "Make a circle move from RIGHT to UP",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(circle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 303
+  },
+  {
+    "id": 1317,
+    "request": "Show a line with PINK color",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(PINK)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1571,
+    "request": "Create multiple squares in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1377,
+    "request": "Show a square that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Rotate(square_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 307
+  },
+  {
+    "id": 492,
+    "request": "Create a rectangle that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 740,
+    "request": "Create multiple squares in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1448,
+    "request": "Create a line that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1742,
+    "request": "Show a circle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Rotate(circle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 1078,
+    "request": "Show text that says 'Science'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Science\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 274
+  },
+  {
+    "id": 70,
+    "request": "Create a BLACK text",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLACK)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 279
+  },
+  {
+    "id": 297,
+    "request": "Show text that says 'Python Code'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Python Code\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1468,
+    "request": "Make a square transform into a mathtext",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create text\n        square_obj = Text(\"Hello World\")\n        square_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(square_obj))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1526,
+    "request": "Animate a rectangle using rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Rotate(rectangle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 332
+  },
+  {
+    "id": 356,
+    "request": "Create a dot that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1518,
+    "request": "Create a RED mathtext",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(RED)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 277
+  },
+  {
+    "id": 1446,
+    "request": "Make a arrow move from UP to ORIGIN",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(arrow_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 309
+  },
+  {
+    "id": 676,
+    "request": "Animate a dot using create",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 945,
+    "request": "Show a coordinate system with a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 589,
+    "request": "Make a circle that rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Rotate(circle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 392,
+    "request": "Make a circle transform into a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create first circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Create second mathtext\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(ORANGE)\n        \n        # Show first shape\n        self.play(Create(circle_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(circle_obj, mathtext_obj))\n        self.wait(1)",
+    "length": 548
+  },
+  {
+    "id": 446,
+    "request": "Show a square that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Rotate(square_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 307
+  },
+  {
+    "id": 317,
+    "request": "Animate a arrow using fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(FadeOut(arrow_obj))\n        self.wait(1)",
+    "length": 297
+  },
+  {
+    "id": 890,
+    "request": "Create multiple circles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1818,
+    "request": "Show a dot with BLACK color",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLACK)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 274
+  },
+  {
+    "id": 715,
+    "request": "Show a text with RED color",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(RED)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 277
+  },
+  {
+    "id": 1552,
+    "request": "Make a line move from UL to DOWN",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(line_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 412,
+    "request": "Show text that says 'Hello World'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 998,
+    "request": "Make a text that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 359,
+    "request": "Make a arrow that write",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Write(arrow_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1566,
+    "request": "Animate a text using write",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1929,
+    "request": "Create a ORANGE rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(ORANGE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 322
+  },
+  {
+    "id": 620,
+    "request": "Animate a mathtext using create",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1260,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1744,
+    "request": "Create a dot that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1642,
+    "request": "Show text that says 'Mathematics'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Mathematics\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 348,
+    "request": "Show a square that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Rotate(square_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 307
+  },
+  {
+    "id": 920,
+    "request": "Animate a square using fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(FadeIn(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1953,
+    "request": "Show a line with PINK color",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(PINK)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 739,
+    "request": "Create multiple squares in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1364,
+    "request": "Show a square with YELLOW color",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(YELLOW)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 297
+  },
+  {
+    "id": 723,
+    "request": "Make a mathtext transform into a text",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 557,
+    "request": "Make a rectangle that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Scale(rectangle_obj, factor=2))\n        self.wait(1)",
+    "length": 329
+  },
+  {
+    "id": 1195,
+    "request": "Make a line that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Scale(line_obj, factor=2))\n        self.wait(1)",
+    "length": 298
+  },
+  {
+    "id": 1155,
+    "request": "Make a mathtext that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 295,
+    "request": "Create multiple lines in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1410,
+    "request": "Make a arrow move from DOWN to ORIGIN",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(arrow_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 309
+  },
+  {
+    "id": 748,
+    "request": "Draw a PINK circle and make it create",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(PINK)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 951,
+    "request": "Make a line that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Scale(line_obj, factor=2))\n        self.wait(1)",
+    "length": 298
+  },
+  {
+    "id": 7,
+    "request": "Draw a GREEN arrow and make it rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(GREEN)\n        \n        # Animate arrow\n        self.play(Rotate(arrow_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 309
+  },
+  {
+    "id": 1760,
+    "request": "Create a BLACK circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLACK)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 291
+  },
+  {
+    "id": 1849,
+    "request": "Draw a LIGHT_GRAY line and make it fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(GRAY)\n        \n        # Animate line\n        self.play(FadeOut(line_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1704,
+    "request": "Create circle and dot with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 687,
+    "request": "Create a mathematical formula a^2 + b^2 = c^2",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        circle_obj = MathTex(\"x^2 + y^2 = r^2\")\n        circle_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(circle_obj))\n        self.wait(2)",
+    "length": 312
+  },
+  {
+    "id": 102,
+    "request": "Make a text transform into a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1211,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 853,
+    "request": "Create rectangle and mathtext with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 29,
+    "request": "Show a arrow that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Rotate(arrow_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 308
+  },
+  {
+    "id": 869,
+    "request": "Show a circle with LIGHT_GRAY color",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(GRAY)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 111,
+    "request": "Make a line move from DL to LEFT",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(line_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 743,
+    "request": "Make a dot that create",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1809,
+    "request": "Make a circle move from UR to DOWN",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(circle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 303
+  },
+  {
+    "id": 1315,
+    "request": "Make a rectangle that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Scale(rectangle_obj, factor=2))\n        self.wait(1)",
+    "length": 329
+  },
+  {
+    "id": 663,
+    "request": "Show a dot that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Rotate(dot_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 285
+  },
+  {
+    "id": 1263,
+    "request": "Create multiple arrows in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1928,
+    "request": "Make a mathtext transform into a arrow",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 660,
+    "request": "Make a rectangle transform into a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create first line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Create second rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(PINK)\n        \n        # Show first shape\n        self.play(Create(line_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(line_obj, rectangle_obj))\n        self.wait(1)",
+    "length": 551
+  },
+  {
+    "id": 860,
+    "request": "Create a circle that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 640,
+    "request": "Show a text that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 294,
+    "request": "Create multiple arrows in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 567,
+    "request": "Create a arrow that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1223,
+    "request": "Make a mathtext that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 144,
+    "request": "Animate a mathtext using scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1208,
+    "request": "Create mathtext and rectangle with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 600,
+    "request": "Create multiple mathtexts in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1250,
+    "request": "Show a coordinate system with a square",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1063,
+    "request": "Make a dot transform into a arrow",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create first arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Create second line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(PURPLE)\n        \n        # Show first shape\n        self.play(Create(arrow_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(arrow_obj, line_obj))\n        self.wait(1)",
+    "length": 539
+  },
+  {
+    "id": 1822,
+    "request": "Show a rectangle with BLUE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 1919,
+    "request": "Show text that says 'Education'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Education\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 276
+  },
+  {
+    "id": 584,
+    "request": "Show a coordinate system with a mathtext",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1574,
+    "request": "Create multiple circles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1246,
+    "request": "Show text that says 'Mathematics'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Mathematics\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 997,
+    "request": "Show a coordinate system with a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 815,
+    "request": "Show a coordinate system with a dot",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 995,
+    "request": "Draw a GREEN arrow and make it fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(GREEN)\n        \n        # Animate arrow\n        self.play(FadeIn(arrow_obj))\n        self.wait(1)",
+    "length": 297
+  },
+  {
+    "id": 713,
+    "request": "Show a coordinate system with a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 477,
+    "request": "Create multiple circles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 957,
+    "request": "Create a mathematical formula F = ma",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        square_obj = MathTex(\"x^2 + y^2 = r^2\")\n        square_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(square_obj))\n        self.wait(2)",
+    "length": 312
+  },
+  {
+    "id": 280,
+    "request": "Create a arrow that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1346,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 922,
+    "request": "Show a arrow with WHITE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(WHITE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 297
+  },
+  {
+    "id": 937,
+    "request": "Show a arrow with YELLOW color",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(YELLOW)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 298
+  },
+  {
+    "id": 1820,
+    "request": "Create multiple arrows in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1831,
+    "request": "Make a mathtext that rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 349,
+    "request": "Make a mathtext that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1427,
+    "request": "Show a text with PINK color",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(PINK)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1340,
+    "request": "Create a mathematical formula F = ma",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        text_obj = MathTex(\"x^2 + y^2 = r^2\")\n        text_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(text_obj))\n        self.wait(2)",
+    "length": 304
+  },
+  {
+    "id": 656,
+    "request": "Create multiple lines in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1455,
+    "request": "Make a square that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Scale(square_obj, factor=2))\n        self.wait(1)",
+    "length": 304
+  },
+  {
+    "id": 601,
+    "request": "Animate a arrow using create",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 234,
+    "request": "Create arrow and square with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1913,
+    "request": "Create circle and square with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1406,
+    "request": "Show a line with PURPLE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(PURPLE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 291
+  },
+  {
+    "id": 1828,
+    "request": "Show a coordinate system with a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1177,
+    "request": "Make a square transform into a dot",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create first square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Create second circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(PINK)\n        \n        # Show first shape\n        self.play(Create(square_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(square_obj, circle_obj))\n        self.wait(1)",
+    "length": 533
+  },
+  {
+    "id": 283,
+    "request": "Show a circle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Rotate(circle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 1485,
+    "request": "Make a square move from UP to UR",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(square_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 308
+  },
+  {
+    "id": 1107,
+    "request": "Show a arrow that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Rotate(arrow_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 308
+  },
+  {
+    "id": 1393,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 466,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        rectangle_obj = MathTex(\"x^2 + y^2 = r^2\")\n        rectangle_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(rectangle_obj))\n        self.wait(2)",
+    "length": 324
+  },
+  {
+    "id": 118,
+    "request": "Show a text that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 55,
+    "request": "Animate a square using fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(FadeOut(square_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1821,
+    "request": "Animate a square using fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(FadeOut(square_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1997,
+    "request": "Make a mathtext move from UL to DL",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 720,
+    "request": "Show a coordinate system with a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 862,
+    "request": "Make a text that fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1365,
+    "request": "Create a LIGHT_GRAY text",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(GRAY)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 4,
+    "request": "Make a line transform into a arrow",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create first line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Create second dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(ORANGE)\n        \n        # Show first shape\n        self.play(Create(line_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(line_obj, dot_obj))\n        self.wait(1)",
+    "length": 518
+  },
+  {
+    "id": 882,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1688,
+    "request": "Create multiple texts in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1724,
+    "request": "Create square and circle with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1631,
+    "request": "Show a coordinate system with a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 996,
+    "request": "Create a mathematical formula e^{i\\pi} + 1 = 0",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        square_obj = MathTex(\"x^2 + y^2 = r^2\")\n        square_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(square_obj))\n        self.wait(2)",
+    "length": 312
+  },
+  {
+    "id": 745,
+    "request": "Make a mathtext move from UR to ORIGIN",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1962,
+    "request": "Create multiple arrows in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1844,
+    "request": "Show a coordinate system with a square",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 954,
+    "request": "Make a mathtext that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1896,
+    "request": "Make a dot that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Scale(dot_obj, factor=2))\n        self.wait(1)",
+    "length": 282
+  },
+  {
+    "id": 624,
+    "request": "Create mathtext and line with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 210,
+    "request": "Show a line that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Rotate(line_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 301
+  },
+  {
+    "id": 1252,
+    "request": "Make a rectangle that move",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(rectangle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 333
+  },
+  {
+    "id": 1983,
+    "request": "Animate a dot using move",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(dot_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1618,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        arrow_obj = MathTex(\"x^2 + y^2 = r^2\")\n        arrow_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(arrow_obj))\n        self.wait(2)",
+    "length": 308
+  },
+  {
+    "id": 396,
+    "request": "Animate a arrow using scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Scale(arrow_obj, factor=2))\n        self.wait(1)",
+    "length": 305
+  },
+  {
+    "id": 1874,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass MathtextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(mathtext_obj))\n        self.wait(2)",
+    "length": 320
+  },
+  {
+    "id": 1544,
+    "request": "Show text that says 'Learning'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Learning\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 275
+  },
+  {
+    "id": 1139,
+    "request": "Show a rectangle with PURPLE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(PURPLE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 322
+  },
+  {
+    "id": 1212,
+    "request": "Make a circle that fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(FadeOut(circle_obj))\n        self.wait(1)",
+    "length": 291
+  },
+  {
+    "id": 1215,
+    "request": "Create a GREEN arrow",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(GREEN)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 297
+  },
+  {
+    "id": 458,
+    "request": "Create a rectangle that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 940,
+    "request": "Create a mathematical formula x^2 + y^2 = r^2",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        circle_obj = MathTex(\"x^2 + y^2 = r^2\")\n        circle_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(circle_obj))\n        self.wait(2)",
+    "length": 312
+  },
+  {
+    "id": 924,
+    "request": "Create rectangle and square with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 888,
+    "request": "Show a coordinate system with a circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 424,
+    "request": "Show text that says 'Mathematics'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Mathematics\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1990,
+    "request": "Show a rectangle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Rotate(rectangle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 332
+  },
+  {
+    "id": 1995,
+    "request": "Make a circle move from DL to UR",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(circle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 303
+  },
+  {
+    "id": 207,
+    "request": "Create multiple arrows in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 560,
+    "request": "Create a YELLOW dot",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(YELLOW)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 275
+  },
+  {
+    "id": 1103,
+    "request": "Draw a PINK line and make it scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(PINK)\n        \n        # Animate line\n        self.play(Scale(line_obj, factor=2))\n        self.wait(1)",
+    "length": 298
+  },
+  {
+    "id": 1604,
+    "request": "Create a circle that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1714,
+    "request": "Show text that says 'Mathematics'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Mathematics\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1948,
+    "request": "Show text that says 'Science'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Science\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 274
+  },
+  {
+    "id": 1330,
+    "request": "Create a arrow that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1625,
+    "request": "Make a dot move from DOWN to UR",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(dot_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1132,
+    "request": "Make a square transform into a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create first square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Create second arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(RED)\n        \n        # Show first shape\n        self.play(Create(square_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(square_obj, arrow_obj))\n        self.wait(1)",
+    "length": 540
+  },
+  {
+    "id": 1307,
+    "request": "Animate a text using fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1989,
+    "request": "Animate a rectangle using transform",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create first rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Create second circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(LIGHT_GRAY)\n        \n        # Show first shape\n        self.play(Create(rectangle_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(rectangle_obj, circle_obj))\n        self.wait(1)",
+    "length": 564
+  },
+  {
+    "id": 1930,
+    "request": "Make a square that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Scale(square_obj, factor=2))\n        self.wait(1)",
+    "length": 304
+  },
+  {
+    "id": 932,
+    "request": "Make a line move from UL to DR",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(line_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 783,
+    "request": "Show text that says 'Technology'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Technology\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 277
+  },
+  {
+    "id": 703,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        text_obj = MathTex(\"x^2 + y^2 = r^2\")\n        text_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(text_obj))\n        self.wait(2)",
+    "length": 304
+  },
+  {
+    "id": 352,
+    "request": "Make a rectangle that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Scale(rectangle_obj, factor=2))\n        self.wait(1)",
+    "length": 329
+  },
+  {
+    "id": 582,
+    "request": "Draw a LIGHT_GRAY text and make it fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(GRAY)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1730,
+    "request": "Create rectangle and dot with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 1126,
+    "request": "Show a mathtext with YELLOW color",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(YELLOW)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 280
+  },
+  {
+    "id": 475,
+    "request": "Animate a line using write",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Write(line_obj))\n        self.wait(1)",
+    "length": 288
+  },
+  {
+    "id": 1784,
+    "request": "Make a line that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Scale(line_obj, factor=2))\n        self.wait(1)",
+    "length": 298
+  },
+  {
+    "id": 1457,
+    "request": "Make a rectangle move from LEFT to RIGHT",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(rectangle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 333
+  },
+  {
+    "id": 1363,
+    "request": "Create a line that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1514,
+    "request": "Make a dot that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Scale(dot_obj, factor=2))\n        self.wait(1)",
+    "length": 282
+  },
+  {
+    "id": 184,
+    "request": "Create a LIGHT_GRAY circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(GRAY)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 980,
+    "request": "Show a text that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1532,
+    "request": "Create mathtext and text with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 607,
+    "request": "Make a dot that fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(FadeIn(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1306,
+    "request": "Show text that says 'Science'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Science\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 274
+  },
+  {
+    "id": 805,
+    "request": "Create multiple texts in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1428,
+    "request": "Show text that says 'Manim Animation'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Manim Animation\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 282
+  },
+  {
+    "id": 669,
+    "request": "Make a text move from LEFT to LEFT",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 147,
+    "request": "Show a arrow with DARK_GRAY color",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(GRAY)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1355,
+    "request": "Create a arrow that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 369,
+    "request": "Make a circle move from RIGHT to UL",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(circle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 303
+  },
+  {
+    "id": 387,
+    "request": "Make a dot move from UL to ORIGIN",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(dot_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1761,
+    "request": "Animate a circle using fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(FadeIn(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 135,
+    "request": "Make a line move from DOWN to LEFT",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(line_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 1454,
+    "request": "Create multiple squares in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 744,
+    "request": "Show a rectangle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Rotate(rectangle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 332
+  },
+  {
+    "id": 1565,
+    "request": "Make a circle transform into a circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create first circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Create second mathtext\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(BLACK)\n        \n        # Show first shape\n        self.play(Create(circle_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(circle_obj, mathtext_obj))\n        self.wait(1)",
+    "length": 547
+  },
+  {
+    "id": 470,
+    "request": "Make a text that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 834,
+    "request": "Make a arrow transform into a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create first arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Create second mathtext\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(PURPLE)\n        \n        # Show first shape\n        self.play(Create(arrow_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(arrow_obj, mathtext_obj))\n        self.wait(1)",
+    "length": 554
+  },
+  {
+    "id": 857,
+    "request": "Animate a arrow using write",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Write(arrow_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 371,
+    "request": "Show a circle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Rotate(circle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 1723,
+    "request": "Make a circle that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Scale(circle_obj, factor=2))\n        self.wait(1)",
+    "length": 299
+  },
+  {
+    "id": 1746,
+    "request": "Create a rectangle that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 801,
+    "request": "Show text that says 'Technology'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Technology\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 277
+  },
+  {
+    "id": 1837,
+    "request": "Show a arrow that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Rotate(arrow_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 308
+  },
+  {
+    "id": 1361,
+    "request": "Show a rectangle with DARK_GRAY color",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(GRAY)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 813,
+    "request": "Create mathtext and square with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create text\n        square_obj = Text(\"Hello World\")\n        square_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(square_obj))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 90,
+    "request": "Create multiple dots in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 195,
+    "request": "Animate a dot using scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Scale(dot_obj, factor=2))\n        self.wait(1)",
+    "length": 282
+  },
+  {
+    "id": 1258,
+    "request": "Animate a mathtext using rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1884,
+    "request": "Draw a ORANGE square and make it write",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(ORANGE)\n        \n        # Animate square\n        self.play(Write(square_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 99,
+    "request": "Make a dot transform into a circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create first circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Create second arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(ORANGE)\n        \n        # Show first shape\n        self.play(Create(circle_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(circle_obj, arrow_obj))\n        self.wait(1)",
+    "length": 538
+  },
+  {
+    "id": 548,
+    "request": "Show a mathtext with BLUE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 719,
+    "request": "Show a circle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Rotate(circle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 1090,
+    "request": "Show a circle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Rotate(circle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 698,
+    "request": "Make a text that transform",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1964,
+    "request": "Draw a PINK mathtext and make it scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(PINK)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 337,
+    "request": "Animate a dot using create",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1695,
+    "request": "Show a line that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Rotate(line_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 301
+  },
+  {
+    "id": 550,
+    "request": "Create rectangle and square with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1174,
+    "request": "Make a text move from UL to UP",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1082,
+    "request": "Show a circle with PURPLE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(PURPLE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 292
+  },
+  {
+    "id": 1650,
+    "request": "Make a dot move from RIGHT to DOWN",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(dot_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1636,
+    "request": "Create multiple circles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1245,
+    "request": "Create multiple arrows in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1158,
+    "request": "Make a dot that fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(FadeOut(dot_obj))\n        self.wait(1)",
+    "length": 274
+  },
+  {
+    "id": 250,
+    "request": "Show a coordinate system with a circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1640,
+    "request": "Make a dot that write",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Write(dot_obj))\n        self.wait(1)",
+    "length": 272
+  },
+  {
+    "id": 163,
+    "request": "Show text that says 'Manim Animation'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Manim Animation\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 282
+  },
+  {
+    "id": 1707,
+    "request": "Make a arrow that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Scale(arrow_obj, factor=2))\n        self.wait(1)",
+    "length": 305
+  },
+  {
+    "id": 1816,
+    "request": "Create a text that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1493,
+    "request": "Create a mathematical formula e^{i\\pi} + 1 = 0",
+    "script": "from manim import *\nimport numpy as np\n\nclass MathtextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(mathtext_obj))\n        self.wait(2)",
+    "length": 320
+  },
+  {
+    "id": 1494,
+    "request": "Show a coordinate system with a mathtext",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 930,
+    "request": "Make a mathtext that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 343,
+    "request": "Make a rectangle move from UP to UL",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(rectangle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 333
+  },
+  {
+    "id": 1279,
+    "request": "Create a mathematical formula F = ma",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        rectangle_obj = MathTex(\"x^2 + y^2 = r^2\")\n        rectangle_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(rectangle_obj))\n        self.wait(2)",
+    "length": 324
+  },
+  {
+    "id": 1233,
+    "request": "Create multiple rectangles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 173,
+    "request": "Create a PURPLE rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(PURPLE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 322
+  },
+  {
+    "id": 1839,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1717,
+    "request": "Create circle and circle with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1882,
+    "request": "Create a PINK circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(PINK)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 422,
+    "request": "Make a square transform into a mathtext",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create text\n        square_obj = Text(\"Hello World\")\n        square_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(square_obj))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 238,
+    "request": "Make a arrow transform into a dot",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create first arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Create second mathtext\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(DARK_GRAY)\n        \n        # Show first shape\n        self.play(Create(arrow_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(arrow_obj, mathtext_obj))\n        self.wait(1)",
+    "length": 557
+  },
+  {
+    "id": 213,
+    "request": "Show a square with WHITE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(WHITE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 904,
+    "request": "Show a mathtext that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 556,
+    "request": "Show text that says 'Technology'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Technology\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 277
+  },
+  {
+    "id": 1056,
+    "request": "Show a square with YELLOW color",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(YELLOW)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 297
+  },
+  {
+    "id": 1883,
+    "request": "Create multiple mathtexts in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 678,
+    "request": "Make a mathtext transform into a text",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1647,
+    "request": "Animate a rectangle using fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(FadeOut(rectangle_obj))\n        self.wait(1)",
+    "length": 321
+  },
+  {
+    "id": 1633,
+    "request": "Create a BLUE dot",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1576,
+    "request": "Animate a text using write",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1194,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        dot_obj = MathTex(\"x^2 + y^2 = r^2\")\n        dot_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(dot_obj))\n        self.wait(2)",
+    "length": 300
+  },
+  {
+    "id": 706,
+    "request": "Make a rectangle that fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(FadeOut(rectangle_obj))\n        self.wait(1)",
+    "length": 321
+  },
+  {
+    "id": 256,
+    "request": "Create line and line with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 131,
+    "request": "Show a coordinate system with a rectangle",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 320
+  },
+  {
+    "id": 1541,
+    "request": "Make a arrow move from LEFT to LEFT",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(arrow_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 309
+  },
+  {
+    "id": 1336,
+    "request": "Make a square that write",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Write(square_obj))\n        self.wait(1)",
+    "length": 294
+  },
+  {
+    "id": 1971,
+    "request": "Create a mathematical formula F = ma",
+    "script": "from manim import *\nimport numpy as np\n\nclass MathtextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(mathtext_obj))\n        self.wait(2)",
+    "length": 320
+  },
+  {
+    "id": 386,
+    "request": "Make a mathtext that scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1957,
+    "request": "Draw a WHITE mathtext and make it fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(WHITE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 279
+  },
+  {
+    "id": 942,
+    "request": "Make a dot transform into a dot",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create first dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Create second square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(RED)\n        \n        # Show first shape\n        self.play(Create(dot_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(dot_obj, square_obj))\n        self.wait(1)",
+    "length": 515
+  },
+  {
+    "id": 848,
+    "request": "Show a circle with PURPLE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(PURPLE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 292
+  },
+  {
+    "id": 1871,
+    "request": "Show a dot with YELLOW color",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(YELLOW)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 275
+  },
+  {
+    "id": 1535,
+    "request": "Make a mathtext move from ORIGIN to UL",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1085,
+    "request": "Create a BLUE dot",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1690,
+    "request": "Make a arrow that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Scale(arrow_obj, factor=2))\n        self.wait(1)",
+    "length": 305
+  },
+  {
+    "id": 1120,
+    "request": "Make a arrow that create",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1687,
+    "request": "Show a square with BLUE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1488,
+    "request": "Show text that says 'Mathematics'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Mathematics\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1192,
+    "request": "Create multiple rectangles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1234,
+    "request": "Make a arrow move from LEFT to DOWN",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(arrow_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 309
+  },
+  {
+    "id": 553,
+    "request": "Make a text move from UP to UR",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1927,
+    "request": "Create a text that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1440,
+    "request": "Draw a BLACK circle and make it move",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLACK)\n        \n        # Animate circle\n        self.play(circle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 304
+  },
+  {
+    "id": 822,
+    "request": "Create a mathematical formula e^{i\\pi} + 1 = 0",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        square_obj = MathTex(\"x^2 + y^2 = r^2\")\n        square_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(square_obj))\n        self.wait(2)",
+    "length": 312
+  },
+  {
+    "id": 1134,
+    "request": "Show a mathtext with ORANGE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(ORANGE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 280
+  },
+  {
+    "id": 1053,
+    "request": "Show a coordinate system with a circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1041,
+    "request": "Create multiple dots in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1031,
+    "request": "Create a DARK_GRAY text",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(GRAY)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1225,
+    "request": "Animate a dot using rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Rotate(dot_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 285
+  },
+  {
+    "id": 529,
+    "request": "Make a mathtext transform into a circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create text\n        circle_obj = Text(\"Hello World\")\n        circle_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(circle_obj))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1017,
+    "request": "Show text that says 'Technology'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Technology\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 277
+  },
+  {
+    "id": 1750,
+    "request": "Create multiple lines in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 708,
+    "request": "Make a rectangle that fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(FadeOut(rectangle_obj))\n        self.wait(1)",
+    "length": 321
+  },
+  {
+    "id": 605,
+    "request": "Make a dot transform into a square",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create first square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Create second circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(WHITE)\n        \n        # Show first shape\n        self.play(Create(square_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(square_obj, circle_obj))\n        self.wait(1)",
+    "length": 534
+  },
+  {
+    "id": 1318,
+    "request": "Create arrow and dot with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1122,
+    "request": "Show a dot with BLACK color",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLACK)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 274
+  },
+  {
+    "id": 169,
+    "request": "Make a square move from UP to DOWN",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(square_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 308
+  },
+  {
+    "id": 638,
+    "request": "Draw a PURPLE circle and make it transform",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create first circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(PURPLE)\n        \n        # Create second square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(LIGHT_GRAY)\n        \n        # Show first shape\n        self.play(Create(circle_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(circle_obj, square_obj))\n        self.wait(1)",
+    "length": 541
+  },
+  {
+    "id": 854,
+    "request": "Draw a YELLOW arrow and make it fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(YELLOW)\n        \n        # Animate arrow\n        self.play(FadeOut(arrow_obj))\n        self.wait(1)",
+    "length": 299
+  },
+  {
+    "id": 1430,
+    "request": "Make a line move from RIGHT to UR",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(line_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 1136,
+    "request": "Create a mathematical formula x^2 + y^2 = r^2",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        circle_obj = MathTex(\"x^2 + y^2 = r^2\")\n        circle_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(circle_obj))\n        self.wait(2)",
+    "length": 312
+  },
+  {
+    "id": 1619,
+    "request": "Create a text that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1803,
+    "request": "Draw a GREEN line and make it move",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(GREEN)\n        \n        # Animate line\n        self.play(line_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 303
+  },
+  {
+    "id": 320,
+    "request": "Draw a GREEN arrow and make it write",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(GREEN)\n        \n        # Animate arrow\n        self.play(Write(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 108,
+    "request": "Make a dot that rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Rotate(dot_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 285
+  },
+  {
+    "id": 1373,
+    "request": "Animate a circle using transform",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create first circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Create second mathtext\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(PURPLE)\n        \n        # Show first shape\n        self.play(Create(circle_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(circle_obj, mathtext_obj))\n        self.wait(1)",
+    "length": 548
+  },
+  {
+    "id": 1598,
+    "request": "Make a mathtext move from RIGHT to ORIGIN",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1269,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 425,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        rectangle_obj = MathTex(\"x^2 + y^2 = r^2\")\n        rectangle_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(rectangle_obj))\n        self.wait(2)",
+    "length": 324
+  },
+  {
+    "id": 549,
+    "request": "Create mathtext and mathtext with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 237,
+    "request": "Animate a mathtext using rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 841,
+    "request": "Show a arrow that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Rotate(arrow_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 308
+  },
+  {
+    "id": 1168,
+    "request": "Create a PINK arrow",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(PINK)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 97,
+    "request": "Make a circle that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Scale(circle_obj, factor=2))\n        self.wait(1)",
+    "length": 299
+  },
+  {
+    "id": 863,
+    "request": "Make a line transform into a arrow",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create first line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Create second dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(LIGHT_GRAY)\n        \n        # Show first shape\n        self.play(Create(line_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(line_obj, dot_obj))\n        self.wait(1)",
+    "length": 522
+  },
+  {
+    "id": 0,
+    "request": "Show a dot with BLUE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1458,
+    "request": "Make a text that write",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1867,
+    "request": "Draw a GREEN arrow and make it scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(GREEN)\n        \n        # Animate arrow\n        self.play(Scale(arrow_obj, factor=2))\n        self.wait(1)",
+    "length": 306
+  },
+  {
+    "id": 1135,
+    "request": "Create a dot that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 1482,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        text_obj = MathTex(\"x^2 + y^2 = r^2\")\n        text_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(text_obj))\n        self.wait(2)",
+    "length": 304
+  },
+  {
+    "id": 1314,
+    "request": "Draw a PINK mathtext and make it rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(PINK)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1835,
+    "request": "Make a text that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 851,
+    "request": "Show text that says 'Science'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Science\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 274
+  },
+  {
+    "id": 394,
+    "request": "Make a line transform into a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create first line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Create second mathtext\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(WHITE)\n        \n        # Show first shape\n        self.play(Create(line_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(line_obj, mathtext_obj))\n        self.wait(1)",
+    "length": 546
+  },
+  {
+    "id": 1530,
+    "request": "Draw a YELLOW text and make it scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(YELLOW)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 280
+  },
+  {
+    "id": 1508,
+    "request": "Make a dot transform into a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create first line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Create second dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(PURPLE)\n        \n        # Show first shape\n        self.play(Create(line_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(line_obj, dot_obj))\n        self.wait(1)",
+    "length": 518
+  },
+  {
+    "id": 1009,
+    "request": "Make a mathtext move from LEFT to UL",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1331,
+    "request": "Create multiple squares in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1247,
+    "request": "Make a line that write",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Write(line_obj))\n        self.wait(1)",
+    "length": 288
+  },
+  {
+    "id": 1152,
+    "request": "Show a dot that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Rotate(dot_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 285
+  },
+  {
+    "id": 476,
+    "request": "Make a circle that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Scale(circle_obj, factor=2))\n        self.wait(1)",
+    "length": 299
+  },
+  {
+    "id": 941,
+    "request": "Make a dot transform into a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create first line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Create second square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(DARK_GRAY)\n        \n        # Show first shape\n        self.play(Create(line_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(line_obj, square_obj))\n        self.wait(1)",
+    "length": 537
+  },
+  {
+    "id": 643,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1955,
+    "request": "Show a arrow with DARK_GRAY color",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(GRAY)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1859,
+    "request": "Show a dot with ORANGE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(ORANGE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 275
+  },
+  {
+    "id": 1645,
+    "request": "Create multiple circles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 67,
+    "request": "Show a dot that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Rotate(dot_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 285
+  },
+  {
+    "id": 1332,
+    "request": "Make a dot move from UR to UP",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(dot_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1525,
+    "request": "Show a coordinate system with a text",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 161,
+    "request": "Animate a dot using fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(FadeOut(dot_obj))\n        self.wait(1)",
+    "length": 274
+  },
+  {
+    "id": 510,
+    "request": "Show text that says 'Technology'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Technology\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 277
+  },
+  {
+    "id": 1088,
+    "request": "Show a arrow with RED color",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(RED)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 513,
+    "request": "Show text that says 'Mathematics'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Mathematics\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1239,
+    "request": "Create a mathematical formula F = ma",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        circle_obj = MathTex(\"x^2 + y^2 = r^2\")\n        circle_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(circle_obj))\n        self.wait(2)",
+    "length": 312
+  },
+  {
+    "id": 227,
+    "request": "Show a square with BLUE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 186,
+    "request": "Make a arrow move from LEFT to LEFT",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(arrow_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 309
+  },
+  {
+    "id": 419,
+    "request": "Make a line move from UL to DR",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(line_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 302
+  },
+  {
+    "id": 1145,
+    "request": "Create a circle that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1864,
+    "request": "Create a YELLOW mathtext",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(YELLOW)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 280
+  },
+  {
+    "id": 861,
+    "request": "Create a DARK_GRAY circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(GRAY)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1445,
+    "request": "Draw a GRAY dot and make it move",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(GRAY)\n        \n        # Animate dot\n        self.play(dot_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1661,
+    "request": "Create a line that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 818,
+    "request": "Make a line that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Scale(line_obj, factor=2))\n        self.wait(1)",
+    "length": 298
+  },
+  {
+    "id": 153,
+    "request": "Create a mathematical formula \\int_0^1 x dx = \\frac{1}{2}",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        dot_obj = MathTex(\"x^2 + y^2 = r^2\")\n        dot_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(dot_obj))\n        self.wait(2)",
+    "length": 300
+  },
+  {
+    "id": 931,
+    "request": "Animate a mathtext using scale",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1513,
+    "request": "Show a text with GREEN color",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(GREEN)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 279
+  },
+  {
+    "id": 1709,
+    "request": "Show a coordinate system with a square",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1020,
+    "request": "Create a BLACK circle",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLACK)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 291
+  },
+  {
+    "id": 1977,
+    "request": "Create rectangle and text with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1711,
+    "request": "Create a mathematical formula E = mc^2",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        dot_obj = MathTex(\"x^2 + y^2 = r^2\")\n        dot_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(dot_obj))\n        self.wait(2)",
+    "length": 300
+  },
+  {
+    "id": 1917,
+    "request": "Animate a line using rotate",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Rotate(line_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 301
+  },
+  {
+    "id": 230,
+    "request": "Create a mathematical formula x^2 + y^2 = r^2",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        text_obj = MathTex(\"x^2 + y^2 = r^2\")\n        text_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(text_obj))\n        self.wait(2)",
+    "length": 304
+  },
+  {
+    "id": 661,
+    "request": "Draw a BLUE line and make it fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(FadeIn(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 380,
+    "request": "Show a mathtext that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1154,
+    "request": "Show a rectangle with RED color",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(RED)\n        \n        # Animate rectangle\n        self.play(Create(rectangle_obj))\n        self.wait(1)",
+    "length": 319
+  },
+  {
+    "id": 1829,
+    "request": "Draw a BLUE circle and make it write",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Write(circle_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 452,
+    "request": "Make a dot move from DL to RIGHT",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(dot_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1628,
+    "request": "Make a circle that write",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Write(circle_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1236,
+    "request": "Animate a arrow using transform",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create first arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Create second mathtext\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(GREEN)\n        \n        # Show first shape\n        self.play(Create(arrow_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(arrow_obj, mathtext_obj))\n        self.wait(1)",
+    "length": 553
+  },
+  {
+    "id": 1321,
+    "request": "Show text that says 'Mathematics'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Mathematics\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1284,
+    "request": "Make a circle move from RIGHT to DL",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(circle_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 303
+  },
+  {
+    "id": 1879,
+    "request": "Show text that says 'Hello World'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 1967,
+    "request": "Create a circle that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 1073,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        dot_obj = MathTex(\"x^2 + y^2 = r^2\")\n        dot_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(dot_obj))\n        self.wait(2)",
+    "length": 300
+  },
+  {
+    "id": 968,
+    "request": "Create a arrow that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 328,
+    "request": "Show a line with DARK_GRAY color",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(GRAY)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1047,
+    "request": "Make a text that fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 682,
+    "request": "Make a arrow transform into a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create first line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Create second mathtext\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(WHITE)\n        \n        # Show first shape\n        self.play(Create(line_obj))\n        self.wait(1)\n        \n        # Transform to second shape\n        self.play(Transform(line_obj, mathtext_obj))\n        self.wait(1)",
+    "length": 546
+  },
+  {
+    "id": 1092,
+    "request": "Make a arrow that fadein",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(BLUE)\n        \n        # Animate arrow\n        self.play(FadeIn(arrow_obj))\n        self.wait(1)",
+    "length": 296
+  },
+  {
+    "id": 1216,
+    "request": "Show text that says 'Manim Animation'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Manim Animation\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 282
+  },
+  {
+    "id": 107,
+    "request": "Show a rectangle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Rotate(rectangle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 332
+  },
+  {
+    "id": 1915,
+    "request": "Create a mathematical formula F = ma",
+    "script": "from manim import *\nimport numpy as np\n\nclass MathtextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        mathtext_obj = MathTex(\"x^2 + y^2 = r^2\")\n        mathtext_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(mathtext_obj))\n        self.wait(2)",
+    "length": 320
+  },
+  {
+    "id": 1785,
+    "request": "Create a mathematical formula \\sin^2(x) + \\cos^2(x) = 1",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create mathematical formula\n        text_obj = MathTex(\"x^2 + y^2 = r^2\")\n        text_obj.set_color(BLUE)\n        \n        # Display formula\n        self.play(Write(text_obj))\n        self.wait(2)",
+    "length": 304
+  },
+  {
+    "id": 533,
+    "request": "Make a square move from ORIGIN to ORIGIN",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(square_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 308
+  },
+  {
+    "id": 636,
+    "request": "Create a dot that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 223,
+    "request": "Show a rectangle that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass RectangleScene(Scene):\n    def construct(self):\n                # Create a rectangle\n        rectangle_obj = Rectangle(width=3, height=2)\n        rectangle_obj.set_color(BLUE)\n        \n        # Animate rectangle\n        self.play(Rotate(rectangle_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 332
+  },
+  {
+    "id": 165,
+    "request": "Create multiple circles in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass CircleScene(Scene):\n    def construct(self):\n                # Create a circle\n        circle_obj = Circle(radius=1)\n        circle_obj.set_color(BLUE)\n        \n        # Animate circle\n        self.play(Create(circle_obj))\n        self.wait(1)",
+    "length": 290
+  },
+  {
+    "id": 806,
+    "request": "Show text that says 'Learning'",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Learning\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 275
+  },
+  {
+    "id": 1716,
+    "request": "Show a arrow with RED color",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(RED)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1305,
+    "request": "Create a dot that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Create(dot_obj))\n        self.wait(1)",
+    "length": 273
+  },
+  {
+    "id": 966,
+    "request": "Make a dot that scales up and down",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Scale(dot_obj, factor=2))\n        self.wait(1)",
+    "length": 282
+  },
+  {
+    "id": 141,
+    "request": "Show a coordinate system with a text",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 912,
+    "request": "Show a dot that rotates",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(Rotate(dot_obj, angle=PI/2))\n        self.wait(1)",
+    "length": 285
+  },
+  {
+    "id": 415,
+    "request": "Create a PURPLE arrow",
+    "script": "from manim import *\nimport numpy as np\n\nclass ArrowScene(Scene):\n    def construct(self):\n                # Create a arrow\n        arrow_obj = Arrow(start=LEFT, end=RIGHT)\n        arrow_obj.set_color(PURPLE)\n        \n        # Animate arrow\n        self.play(Create(arrow_obj))\n        self.wait(1)",
+    "length": 298
+  },
+  {
+    "id": 1529,
+    "request": "Show a coordinate system with a square",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 1698,
+    "request": "Create a mathtext that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 499,
+    "request": "Show a text with BLUE color",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 435,
+    "request": "Make a dot move from LEFT to UP",
+    "script": "from manim import *\nimport numpy as np\n\nclass DotScene(Scene):\n    def construct(self):\n                # Create a dot\n        dot_obj = Dot(point=ORIGIN)\n        dot_obj.set_color(BLUE)\n        \n        # Animate dot\n        self.play(dot_obj.animate.shift(RIGHT))\n        self.wait(1)",
+    "length": 286
+  },
+  {
+    "id": 1298,
+    "request": "Create multiple lines in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass LineScene(Scene):\n    def construct(self):\n                # Create a line\n        line_obj = Line(start=LEFT, end=RIGHT)\n        line_obj.set_color(BLUE)\n        \n        # Animate line\n        self.play(Create(line_obj))\n        self.wait(1)",
+    "length": 289
+  },
+  {
+    "id": 1506,
+    "request": "Create a square that fades in and out",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 812,
+    "request": "Draw a RED mathtext and make it transform",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(RED)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 277
+  },
+  {
+    "id": 755,
+    "request": "Create multiple squares in a line",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  },
+  {
+    "id": 362,
+    "request": "Animate a text using fadeout",
+    "script": "from manim import *\nimport numpy as np\n\nclass TextScene(Scene):\n    def construct(self):\n                # Create text\n        text_obj = Text(\"Hello World\")\n        text_obj.set_color(BLUE)\n        \n        # Animate text\n        self.play(Write(text_obj))\n        self.wait(1)",
+    "length": 278
+  },
+  {
+    "id": 746,
+    "request": "Create rectangle and square with different colors",
+    "script": "from manim import *\nimport numpy as np\n\nclass SquareScene(Scene):\n    def construct(self):\n                # Create a square\n        square_obj = Square(side_length=2)\n        square_obj.set_color(BLUE)\n        \n        # Animate square\n        self.play(Create(square_obj))\n        self.wait(1)",
+    "length": 295
+  }
+]

@@ -1,0 +1,19 @@
+# Custom LLM Dependencies
+torch>=2.0.0
+numpy>=1.24.0
+tokenizers>=0.15.0
+tqdm>=4.66.0
+matplotlib>=3.7.0
+scikit-learn>=1.3.0
+
+# Original Dependencies
+manim>=0.18.0
+python-dotenv>=1.0.0
+
+# Optional: For GPU acceleration
+# torch-audio>=2.0.0
+# accelerate>=0.25.0
+
+# Optional: For visualization
+# tensorboard>=2.15.0
+# wandb>=0.16.0
